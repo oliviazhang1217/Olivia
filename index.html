@@ -53,9 +53,8 @@ a { color: inherit; text-decoration: none; }
 .phone-card::before { content: ""; position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 110px; height: 26px; background: #0b0f17; border-radius: 14px; z-index: 2; box-shadow: 0 2px 4px rgba(0,0,0,.25) inset; }
 .phone-screen { position: absolute; inset: 14px; border-radius: 36px; background-image: var(--img); background-size: cover; background-position: center; filter: saturate(.85) brightness(.92) contrast(.98); }
 .global-wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: center; }
-.global-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; opacity: 0; transform: translateX(32px); transition: opacity .25s ease, transform .25s ease; width: min(40vw, 900px); justify-self: end; margin-left: auto; margin-right: clamp(0px, 2vw, 24px); position: relative; left: 200px; }
+.global-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; opacity: 0; transform: translateX(32px); transition: opacity .25s ease, transform .25s ease; width: min(36vw, 760px); justify-self: end; margin-left: auto; margin-right: clamp(0px, 2vw, 24px); position: relative; left: 200px; }
 .global-grid.show { opacity: 1; transform: none; }
-#about-creator .mini-card { height: 320px; }
 #global-title { transition: transform .25s ease; white-space: nowrap; }
 #global-title:hover { transform: scale(1.06); }
 .resume { position: relative; padding: 80px 0; background: #f3f4f6 url('public/CV.JPG') center/cover no-repeat; }
@@ -178,14 +177,7 @@ footer { padding: 32px 24px; font-size: 14px; opacity: .7; text-align: center; }
               <div class="mini-hero"></div>
               <div class="mini-pill">Tokyo</div>
             </div>
-            <div class="mini-card" style="--img: url('public/TAIWAN.JPG')">
-              <div class="mini-hero"></div>
-              <div class="mini-pill">Taiwan</div>
-            </div>
-            <div class="mini-card" style="--img: url('public/XINJIANG.JPG')">
-              <div class="mini-hero"></div>
-              <div class="mini-pill">Xinjiang</div>
-            </div>
+            
             <div class="mini-card" style="--img: url('public/BALI.JPG')">
               <div class="mini-hero"></div>
               <div class="mini-pill">Bali</div>
